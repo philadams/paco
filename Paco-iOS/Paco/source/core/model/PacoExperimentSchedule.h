@@ -42,10 +42,11 @@ typedef enum {
 } PacoScheduleType;
 
 
-@interface PacoExperimentSchedule : NSObject
+@interface PacoExperimentSchedule : NSObject <NSCopying>
 
 @property (nonatomic, assign) BOOL byDayOfMonth;
 @property (nonatomic, assign) BOOL byDayOfWeek;
+//Note: dayOfMonth returned from server is 0 based, but the UI on web is 1 based.
 @property (nonatomic, assign) NSInteger dayOfMonth;
 @property (nonatomic, assign) long long esmEndHour;
 @property (nonatomic, assign) NSInteger esmFrequency;
@@ -72,6 +73,8 @@ typedef enum {
 @property (nonatomic, retain) id jsonObject;
 @property (nonatomic, retain) NSArray *esmScheduleList;  // NSArray<NSDate>
 + (id)pacoExperimentScheduleFromJSON:(id)jsonObject;
+- (id)serializeToJSON;
+
 - (NSString *)jsonString;
 - (NSString*)esmStartTimeString;
 - (NSString*)esmEndTimeString;

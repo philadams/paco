@@ -13,16 +13,17 @@
  * limitations under the License.
  */
 
+#import "PacoSubtitleTableCell.h"
 
-#import <Foundation/Foundation.h>
+@implementation PacoSubtitleTableCell
 
-@interface PacoExperimentFeedback : NSObject
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 
-@property (nonatomic, copy) NSString *feedbackId;
-@property (nonatomic, copy) NSString *text;
-@property (nonatomic, copy) NSString *type;  // currently only 1 type , 'display'
-@property (nonatomic, retain) id jsonObject;
-+ (id)pacoFeedbackFromJSON:(id)jsonObject;
-- (id)serializeToJSON;
+  self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
+  if (self) {
+
+  }
+  return self;
+}
 
 @end
