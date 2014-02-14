@@ -27,7 +27,6 @@ static NSString* const INPUT_LIST_CHOICES = @"listChoices";
 static NSString* const INPUT_MANDATORY = @"mandatory";
 static NSString* const INPUT_MULTI_SELECT = @"multiselect";
 static NSString* const INPUT_NAME = @"name";
-static NSString* const INPUT_QUESTION_TYPE = @"questionType";
 static NSString* const INPUT_RESPONSE_TYPE = @"responseType";
 static NSString* const INPUT_TEXT = @"text";
 
@@ -46,7 +45,6 @@ static NSString* const INPUT_TEXT = @"text";
   input.mandatory = [[inputMembers objectForKey:INPUT_MANDATORY] boolValue];
   input.multiSelect = [[inputMembers objectForKey:INPUT_MULTI_SELECT] boolValue];
   input.name = [inputMembers objectForKey:INPUT_NAME];
-  input.questionType = [inputMembers objectForKey:INPUT_QUESTION_TYPE];
   input.responseType = [inputMembers objectForKey:INPUT_RESPONSE_TYPE];
   input.responseEnumType = [PacoExperimentInput responseEnumTypeFromString:input.responseType];
   input.rightSideLabel = [inputMembers objectForKey:INPUT_RIGHT_SIDE_LABEL];
@@ -76,9 +74,6 @@ static NSString* const INPUT_TEXT = @"text";
   [json setObject:[NSNumber numberWithBool:self.mandatory] forKey:INPUT_MANDATORY];
   [json setObject:[NSNumber numberWithBool:self.multiSelect] forKey:INPUT_MULTI_SELECT];
   [json setObject:self.name forKey:INPUT_NAME];
-  if (self.questionType) {
-    [json setObject:self.questionType forKey:INPUT_QUESTION_TYPE];
-  }
   if (self.responseType) {
     [json setObject:self.responseType forKey:INPUT_RESPONSE_TYPE];
   }
@@ -180,7 +175,6 @@ static NSString* const INPUT_TEXT = @"text";
           @"mandatory=%d "
           @"multiSelect=%@ "
           @"name=%@ "
-          @"questionType=%@ "
           @"responseType=%@ "
           @"rightSideLabel=%@ "
           @"text=%@ >",
@@ -195,7 +189,6 @@ static NSString* const INPUT_TEXT = @"text";
           self.mandatory,
           self.multiSelect ? @"YES" : @"NO",
           self.name,
-          self.questionType,
           self.responseType,
           self.rightSideLabel,
           self.text, nil];
@@ -205,10 +198,6 @@ static NSString* const INPUT_TEXT = @"text";
 - (id)valueForValidation {
   //default value is null
   id value = [NSNull null];
-  if (![self.questionType isEqualToString:@"question"]) {
-    NSLog(@"[ERROR]input's questionType is not equal to question!");
-    return value;
-  }
   if (self.responseObject == nil) {
     return value;
   }
@@ -272,10 +261,6 @@ static NSString* const INPUT_TEXT = @"text";
 
 - (id)payloadObject {
   if (self.responseObject == nil) {
-    return nil;
-  }
-  if (![self.questionType isEqualToString:@"question"]) {
-    NSAssert1(NO, @"questionType %@ is NOT implemented!", self.questionType);
     return nil;
   }
   

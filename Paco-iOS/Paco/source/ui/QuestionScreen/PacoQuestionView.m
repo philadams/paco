@@ -250,11 +250,6 @@ UIImagePickerControllerDelegate>
     return;
   }
 
-  if (![self.question.questionType isEqualToString:@"question"]) {
-    NSLog(@"TODO: implement question type \"%@\" [%@]", self.question.questionType, self.question.text);
-    return;
-  }
-
   // Question Label
   self.questionText = [[UILabel alloc] initWithFrame:CGRectZero];
   self.questionText.text = self.question.text;
@@ -446,11 +441,6 @@ UIImagePickerControllerDelegate>
     return [NSNumber numberWithInt:140 + (textSize.height)];
   }
 
-  if (![question.questionType isEqualToString:@"question"]) {
-    NSLog(@"TODO: implement question type \"%@\" [%@]", question.questionType, question.text);
-    return [NSNumber numberWithInt:140 + (textSize.height)];
-  }
-
   if (question.responseEnumType == ResponseEnumTypeLikertSmileys) {
     return [NSNumber numberWithInt:100 + (textSize.height)];
   } else if (question.responseEnumType == ResponseEnumTypeLikert) {
@@ -481,11 +471,6 @@ UIImagePickerControllerDelegate>
                                              font:self.questionText.font];
 
   if (self.question == nil) {
-    return;
-  }
-
-  if (![self.question.questionType isEqualToString:@"question"]) {
-    NSLog(@"TODO: implement question type \"%@\" [%@]", self.question.questionType, self.question.text);
     return;
   }
 

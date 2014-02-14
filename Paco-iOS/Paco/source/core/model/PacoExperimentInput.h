@@ -39,7 +39,6 @@ typedef enum {
 @property (nonatomic, assign) BOOL mandatory;
 @property (nonatomic, assign) BOOL multiSelect;
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *questionType;  // 'question'/ (text question or sensor input)
 @property (nonatomic, copy) NSString *responseType;  // 'likert', 'list', open text, etc.
 @property (nonatomic, assign) ResponseEnumType responseEnumType;  
 @property (nonatomic, copy) NSString *rightSideLabel;
