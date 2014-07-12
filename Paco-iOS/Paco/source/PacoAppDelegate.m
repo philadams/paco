@@ -16,7 +16,7 @@
 #import "PacoAppDelegate.h"
 
 #import "GoogleAppEngineAuth.h"
-#import "GTMOAuth2ViewControllerTouch.h"
+#import <GoogleOpenSource/GoogleOpenSource.h>
 #import "PacoClient.h"
 #import "UIColor+Paco.h"
 #import "PacoMainViewController.h"

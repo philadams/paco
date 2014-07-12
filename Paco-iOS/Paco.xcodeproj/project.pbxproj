@@ -81,6 +81,8 @@
 		367C41E91970BB25006ADA60 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41E81970BB25006ADA60 /* CoreMotion.framework */; };
 		367C41EB1970BB2F006ADA60 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EA1970BB2F006ADA60 /* CoreText.framework */; };
 		367C41ED1970BB35006ADA60 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EC1970BB35006ADA60 /* MediaPlayer.framework */; };
+		367C41F01970BE21006ADA60 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EE1970BE21006ADA60 /* GoogleOpenSource.framework */; };
+		367C41F11970BE21006ADA60 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EF1970BE21006ADA60 /* GooglePlus.framework */; };
 		368C2EE1178DFFBA00546918 /* PacoAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368C2EE0178DFFBA00546918 /* PacoAlertView.m */; };
 		368DB0C818EB55D20033DFFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368DB0C718EB55D20033DFFF /* Images.xcassets */; };
 		368F4DA317ECE9ED00CFC2E4 /* PacoDateUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 368F4DA217ECE9ED00CFC2E4 /* PacoDateUtilityTests.m */; };
@@ -170,11 +172,6 @@
 		36B8EC1017568E29004CF035 /* uicheckbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8EBD317568E29004CF035 /* uicheckbox_checked.png */; };
 		36B8EC1117568E29004CF035 /* uicheckbox_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8EBD417568E29004CF035 /* uicheckbox_unchecked.png */; };
 		36B8EC2D17568E33004CF035 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC1717568E33004CF035 /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36B8EC2E17568E33004CF035 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC1C17568E33004CF035 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36B8EC2F17568E33004CF035 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC1F17568E33004CF035 /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
-		36B8EC3017568E33004CF035 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC2117568E33004CF035 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36B8EC3117568E33004CF035 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC2417568E33004CF035 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36B8EC3217568E33004CF035 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36B8EC2517568E33004CF035 /* GTMOAuth2ViewTouch.xib */; };
 		36B8EC3317568E33004CF035 /* GoogleAppEngineAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC2A17568E33004CF035 /* GoogleAppEngineAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		36B8EC3417568E33004CF035 /* GoogleClientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC2C17568E33004CF035 /* GoogleClientLogin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		36B8EC3C17568E40004CF035 /* PacoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B8EC3717568E40004CF035 /* PacoTests.m */; };
@@ -374,6 +371,8 @@
 		367C41E81970BB25006ADA60 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		367C41EA1970BB2F006ADA60 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		367C41EC1970BB35006ADA60 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		367C41EE1970BE21006ADA60 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = vendor/GoogleOpenSource.framework; sourceTree = "<group>"; };
+		367C41EF1970BE21006ADA60 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = vendor/GooglePlus.framework; sourceTree = "<group>"; };
 		368C2EDF178DFFBA00546918 /* PacoAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacoAlertView.h; sourceTree = "<group>"; };
 		368C2EE0178DFFBA00546918 /* PacoAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacoAlertView.m; sourceTree = "<group>"; };
 		368DB0C718EB55D20033DFFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -519,15 +518,6 @@
 		36B8EC1617568E33004CF035 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
 		36B8EC1717568E33004CF035 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
 		36B8EC1817568E33004CF035 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		36B8EC1B17568E33004CF035 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
-		36B8EC1C17568E33004CF035 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
-		36B8EC1E17568E33004CF035 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
-		36B8EC1F17568E33004CF035 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
-		36B8EC2017568E33004CF035 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
-		36B8EC2117568E33004CF035 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
-		36B8EC2317568E33004CF035 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
-		36B8EC2417568E33004CF035 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
-		36B8EC2517568E33004CF035 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
 		36B8EC2917568E33004CF035 /* GoogleAppEngineAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAppEngineAuth.h; sourceTree = "<group>"; };
 		36B8EC2A17568E33004CF035 /* GoogleAppEngineAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAppEngineAuth.m; sourceTree = "<group>"; };
 		36B8EC2B17568E33004CF035 /* GoogleClientLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleClientLogin.h; sourceTree = "<group>"; };
@@ -600,6 +590,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367C41F01970BE21006ADA60 /* GoogleOpenSource.framework in Frameworks */,
+				367C41F11970BE21006ADA60 /* GooglePlus.framework in Frameworks */,
 				367C41ED1970BB35006ADA60 /* MediaPlayer.framework in Frameworks */,
 				367C41EB1970BB2F006ADA60 /* CoreText.framework in Frameworks */,
 				367C41E91970BB25006ADA60 /* CoreMotion.framework in Frameworks */,
@@ -658,6 +650,8 @@
 		319771C7163F0733000AC06B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				367C41EE1970BE21006ADA60 /* GoogleOpenSource.framework */,
+				367C41EF1970BE21006ADA60 /* GooglePlus.framework */,
 				367C41EC1970BB35006ADA60 /* MediaPlayer.framework */,
 				367C41EA1970BB2F006ADA60 /* CoreText.framework */,
 				367C41E81970BB25006ADA60 /* CoreMotion.framework */,
@@ -1143,7 +1137,6 @@
 				36AD6CD817C420F800B93855 /* sskeychain */,
 				363E211017AF8420007DE3CE /* reachability */,
 				36B8EC1317568E33004CF035 /* google-toolbox-for-mac */,
-				36B8EC1917568E33004CF035 /* gtm-oauth2 */,
 				36B8EC2617568E33004CF035 /* touchengine */,
 			);
 			path = vendor;
@@ -1166,46 +1159,6 @@
 				36B8EC1717568E33004CF035 /* GTMNSString+URLArguments.m */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		36B8EC1917568E33004CF035 /* gtm-oauth2 */ = {
-			isa = PBXGroup;
-			children = (
-				36B8EC1A17568E33004CF035 /* HTTPFetcher */,
-				36B8EC1D17568E33004CF035 /* Source */,
-			);
-			path = "gtm-oauth2";
-			sourceTree = "<group>";
-		};
-		36B8EC1A17568E33004CF035 /* HTTPFetcher */ = {
-			isa = PBXGroup;
-			children = (
-				36B8EC1B17568E33004CF035 /* GTMHTTPFetcher.h */,
-				36B8EC1C17568E33004CF035 /* GTMHTTPFetcher.m */,
-			);
-			path = HTTPFetcher;
-			sourceTree = "<group>";
-		};
-		36B8EC1D17568E33004CF035 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				36B8EC1E17568E33004CF035 /* GTMOAuth2Authentication.h */,
-				36B8EC1F17568E33004CF035 /* GTMOAuth2Authentication.m */,
-				36B8EC2017568E33004CF035 /* GTMOAuth2SignIn.h */,
-				36B8EC2117568E33004CF035 /* GTMOAuth2SignIn.m */,
-				36B8EC2217568E33004CF035 /* Touch */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		36B8EC2217568E33004CF035 /* Touch */ = {
-			isa = PBXGroup;
-			children = (
-				36B8EC2317568E33004CF035 /* GTMOAuth2ViewControllerTouch.h */,
-				36B8EC2417568E33004CF035 /* GTMOAuth2ViewControllerTouch.m */,
-				36B8EC2517568E33004CF035 /* GTMOAuth2ViewTouch.xib */,
-			);
-			path = Touch;
 			sourceTree = "<group>";
 		};
 		36B8EC2617568E33004CF035 /* touchengine */ = {
@@ -1537,7 +1490,6 @@
 				36B8EC0117568E29004CF035 /* smile_icon5_re.png in Resources */,
 				36B8EC1017568E29004CF035 /* uicheckbox_checked.png in Resources */,
 				36B8EC1117568E29004CF035 /* uicheckbox_unchecked.png in Resources */,
-				36B8EC3217568E33004CF035 /* GTMOAuth2ViewTouch.xib in Resources */,
 				C567E89017A03FDE00267A26 /* deepbark_trial.mp3 in Resources */,
 				36000C5917CD1AF600A8A9E7 /* Test_999999999.plist in Resources */,
 			);
@@ -1624,12 +1576,8 @@
 				E462379218F9F1E900610F56 /* PacoDatePickerView.m in Sources */,
 				36B8EB8E17568DAF004CF035 /* PacoTitleView.m in Sources */,
 				36B8EC2D17568E33004CF035 /* GTMNSString+URLArguments.m in Sources */,
-				36B8EC2E17568E33004CF035 /* GTMHTTPFetcher.m in Sources */,
 				365D20FA1820695E0097F379 /* PacoUtility.m in Sources */,
 				36C4A33E18A4DEEE00D8FE59 /* DDFileLogger.m in Sources */,
-				36B8EC2F17568E33004CF035 /* GTMOAuth2Authentication.m in Sources */,
-				36B8EC3017568E33004CF035 /* GTMOAuth2SignIn.m in Sources */,
-				36B8EC3117568E33004CF035 /* GTMOAuth2ViewControllerTouch.m in Sources */,
 				E4F9A79818899F39006A2803 /* PacoStepperView.m in Sources */,
 				36B8EC3317568E33004CF035 /* GoogleAppEngineAuth.m in Sources */,
 				36B8EC3417568E33004CF035 /* GoogleClientLogin.m in Sources */,
@@ -1845,6 +1793,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paco/source/Paco-Prefix.pch";
 				INFOPLIST_FILE = "Paco/config/Paco-Info.plist";
@@ -1867,6 +1819,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paco/source/Paco-Prefix.pch";
 				INFOPLIST_FILE = "Paco/config/Paco-Info.plist";

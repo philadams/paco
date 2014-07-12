@@ -16,8 +16,7 @@
 #import "PacoService.h"
 
 
-#import "GTMHTTPFetcher.h"
-#import "GTMOAuth2Authentication.h"
+#import <GoogleOpenSource/GoogleOpenSource.h>
 #import "PacoAuthenticator.h"
 #import "PacoDateUtility.h"
 #import "PacoModel.h"
