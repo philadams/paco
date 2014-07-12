@@ -38,6 +38,8 @@ static NSString* const kPacoProductionServerAddress = @"quantifiedself.appspot.c
 static NSString* const kPacoLocalServerAddress = @"127.0.0.1";
 static NSString* const kPacoStagingServerAddress = @"quantifiedself-staging.appspot.com";
 
+static NSString* const kPacoGooglePlusClientId = @"74468437294-nvo8cugu0p65dt8hffjs9ob3ljfstfu8.apps.googleusercontent.com";
+
 @interface PacoModel ()
 - (BOOL)loadExperimentDefinitionsFromFile;
 - (NSError*)loadExperimentInstancesFromFile;
