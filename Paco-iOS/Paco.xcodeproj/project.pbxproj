@@ -76,6 +76,11 @@
 		367233E1180619A5006611E6 /* PacoScheduleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 367233E0180619A5006611E6 /* PacoScheduleGenerator.m */; };
 		367233E2180619A5006611E6 /* PacoScheduleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 367233E0180619A5006611E6 /* PacoScheduleGenerator.m */; };
 		367233E418061FD6006611E6 /* PacoScheduleGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 367233E318061FD6006611E6 /* PacoScheduleGeneratorTests.m */; };
+		367C41DE1970BB13006ADA60 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41DD1970BB13006ADA60 /* AddressBook.framework */; };
+		367C41E71970BB1C006ADA60 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41E61970BB1C006ADA60 /* AssetsLibrary.framework */; };
+		367C41E91970BB25006ADA60 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41E81970BB25006ADA60 /* CoreMotion.framework */; };
+		367C41EB1970BB2F006ADA60 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EA1970BB2F006ADA60 /* CoreText.framework */; };
+		367C41ED1970BB35006ADA60 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EC1970BB35006ADA60 /* MediaPlayer.framework */; };
 		368C2EE1178DFFBA00546918 /* PacoAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368C2EE0178DFFBA00546918 /* PacoAlertView.m */; };
 		368DB0C818EB55D20033DFFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368DB0C718EB55D20033DFFF /* Images.xcassets */; };
 		368F4DA317ECE9ED00CFC2E4 /* PacoDateUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 368F4DA217ECE9ED00CFC2E4 /* PacoDateUtilityTests.m */; };
@@ -364,6 +369,11 @@
 		367233DF180619A5006611E6 /* PacoScheduleGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacoScheduleGenerator.h; sourceTree = "<group>"; };
 		367233E0180619A5006611E6 /* PacoScheduleGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacoScheduleGenerator.m; sourceTree = "<group>"; };
 		367233E318061FD6006611E6 /* PacoScheduleGeneratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacoScheduleGeneratorTests.m; sourceTree = "<group>"; };
+		367C41DD1970BB13006ADA60 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		367C41E61970BB1C006ADA60 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		367C41E81970BB25006ADA60 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		367C41EA1970BB2F006ADA60 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		367C41EC1970BB35006ADA60 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		368C2EDF178DFFBA00546918 /* PacoAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacoAlertView.h; sourceTree = "<group>"; };
 		368C2EE0178DFFBA00546918 /* PacoAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacoAlertView.m; sourceTree = "<group>"; };
 		368DB0C718EB55D20033DFFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -590,6 +600,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367C41ED1970BB35006ADA60 /* MediaPlayer.framework in Frameworks */,
+				367C41EB1970BB2F006ADA60 /* CoreText.framework in Frameworks */,
+				367C41E91970BB25006ADA60 /* CoreMotion.framework in Frameworks */,
+				367C41E71970BB1C006ADA60 /* AssetsLibrary.framework in Frameworks */,
+				367C41DE1970BB13006ADA60 /* AddressBook.framework in Frameworks */,
 				E4D5DE861837DE9A00E5446A /* MessageUI.framework in Frameworks */,
 				C5C4F5D217B163EF009E9F18 /* QuartzCore.framework in Frameworks */,
 				319771C9163F0733000AC06B /* UIKit.framework in Frameworks */,
@@ -643,6 +658,11 @@
 		319771C7163F0733000AC06B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				367C41EC1970BB35006ADA60 /* MediaPlayer.framework */,
+				367C41EA1970BB2F006ADA60 /* CoreText.framework */,
+				367C41E81970BB25006ADA60 /* CoreMotion.framework */,
+				367C41E61970BB1C006ADA60 /* AssetsLibrary.framework */,
+				367C41DD1970BB13006ADA60 /* AddressBook.framework */,
 				E4D5DE851837DE9900E5446A /* MessageUI.framework */,
 				C5C4F5D117B163EF009E9F18 /* QuartzCore.framework */,
 				C5B4691817B07E4900B6BC18 /* CoreGraphics.framework */,
