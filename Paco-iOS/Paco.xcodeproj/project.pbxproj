@@ -83,6 +83,7 @@
 		367C41ED1970BB35006ADA60 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EC1970BB35006ADA60 /* MediaPlayer.framework */; };
 		367C41F01970BE21006ADA60 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EE1970BE21006ADA60 /* GoogleOpenSource.framework */; };
 		367C41F11970BE21006ADA60 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367C41EF1970BE21006ADA60 /* GooglePlus.framework */; };
+		367C41FC1970C57F006ADA60 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 367C41FB1970C57F006ADA60 /* GooglePlus.bundle */; };
 		368C2EE1178DFFBA00546918 /* PacoAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368C2EE0178DFFBA00546918 /* PacoAlertView.m */; };
 		368DB0C818EB55D20033DFFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368DB0C718EB55D20033DFFF /* Images.xcassets */; };
 		368F4DA317ECE9ED00CFC2E4 /* PacoDateUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 368F4DA217ECE9ED00CFC2E4 /* PacoDateUtilityTests.m */; };
@@ -373,6 +374,7 @@
 		367C41EC1970BB35006ADA60 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		367C41EE1970BE21006ADA60 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = vendor/GoogleOpenSource.framework; sourceTree = "<group>"; };
 		367C41EF1970BE21006ADA60 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = vendor/GooglePlus.framework; sourceTree = "<group>"; };
+		367C41FB1970C57F006ADA60 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		368C2EDF178DFFBA00546918 /* PacoAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacoAlertView.h; sourceTree = "<group>"; };
 		368C2EE0178DFFBA00546918 /* PacoAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacoAlertView.m; sourceTree = "<group>"; };
 		368DB0C718EB55D20033DFFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1125,6 +1127,7 @@
 				36B8EBC417568E29004CF035 /* smile_icon5_re.png */,
 				36B8EBD317568E29004CF035 /* uicheckbox_checked.png */,
 				36B8EBD417568E29004CF035 /* uicheckbox_unchecked.png */,
+				367C41FB1970C57F006ADA60 /* GooglePlus.bundle */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -1479,6 +1482,7 @@
 				36B8EBF517568E29004CF035 /* question.png in Resources */,
 				E480BE201896F3E100662432 /* Localizable.strings in Resources */,
 				36B8EBF817568E29004CF035 /* smile_icon1.png in Resources */,
+				367C41FC1970C57F006ADA60 /* GooglePlus.bundle in Resources */,
 				36B8EBF917568E29004CF035 /* smile_icon1_re.png in Resources */,
 				36B8EBFA17568E29004CF035 /* smile_icon2.png in Resources */,
 				36B8EBFB17568E29004CF035 /* smile_icon2_re.png in Resources */,
