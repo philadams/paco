@@ -31,6 +31,8 @@
 #import "PacoScheduleGenerator.h"
 #import "NSMutableArray+Paco.h"
 #import "PacoExperimentSchedule.h"
+#import <GooglePlus/GooglePlus.h>
+#import <GoogleOpenSource/GoogleOpenSource.h>
 
 static NSString* const kPacoNotificationSystemTurnedOn = @"paco_notification_system_turned_on";
 static NSString* const kPacoServerConfigAddress = @"paco_server_configuration_address";
@@ -50,7 +52,7 @@ static NSString* const kPacoGooglePlusClientId = @"74468437294-nvo8cugu0p65dt8hf
 
 typedef void(^BackgroundFetchCompletionBlock)(UIBackgroundFetchResult result);
 
-@interface PacoClient () <PacoSchedulerDelegate>
+@interface PacoClient () <PacoSchedulerDelegate, GPPSignInDelegate>
 @property (nonatomic, retain) PacoAuthenticator *authenticator;
 @property (nonatomic, retain) PacoModel *model;
 @property (nonatomic, strong) PacoEventManager* eventManager;
@@ -80,6 +82,8 @@ typedef void(^BackgroundFetchCompletionBlock)(UIBackgroundFetchResult result);
   self = [super init];
   if (self) {
     [self checkIfUserFirstLaunchPaco];
+
+    [self initializeGooglePlusLogIn];
     
     self.authenticator = [[PacoAuthenticator alloc] initWithFirstLaunchFlag:_firstLaunch];
     self.scheduler = [PacoScheduler schedulerWithDelegate:self firstLaunchFlag:_firstLaunch];
@@ -114,6 +118,14 @@ typedef void(^BackgroundFetchCompletionBlock)(UIBackgroundFetchResult result);
   } else {
     _firstLaunch = NO;
   }
+}
+
+- (void)initializeGooglePlusLogIn {
+  GPPSignIn *signIn = [GPPSignIn sharedInstance];
+  signIn.clientID = kPacoGooglePlusClientId;
+  signIn.shouldFetchGooglePlusUser = YES;
+  signIn.shouldFetchGoogleUserEmail = YES;
+  signIn.delegate = self;
 }
 
 #pragma mark Public methods
@@ -364,6 +376,17 @@ typedef void(^BackgroundFetchCompletionBlock)(UIBackgroundFetchResult result);
 - (void)disableBackgroundFetch {
   DDLogInfo(@"Disable background fetch");
   [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalNever];
+}
+
+
+#pragma mark GPPSignInDelegate
+- (void)finishedWithAuth:(GTMOAuth2Authentication *)auth error:(NSError *)error {
+  self.authenticator.auth = auth;
+  [self startWorkingAfterLogIn];
+}
+
+- (void)didDisconnectWithError:(NSError *)error {
+
 }
 
 #pragma mark bring up login flow if necessary

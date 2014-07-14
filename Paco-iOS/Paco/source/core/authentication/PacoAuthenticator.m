@@ -30,7 +30,6 @@ typedef void (^PacoAuthenticationBlock)(NSError *);
 @interface PacoAuthenticator () <GoogleClientLoginDelegate>
 @property(nonatomic, readwrite, retain) GoogleAppEngineAuth *appEngineAuth;
 @property(nonatomic, readwrite, retain) GTMOAuth2ViewControllerTouch *authUI;
-@property(nonatomic, readwrite, retain) GTMOAuth2Authentication *auth;
 @property(nonatomic, readwrite, copy) PacoAuthenticationBlock completionHandler;
 @property(nonatomic, readwrite, copy) NSString *cookie;
 @property(nonatomic, readwrite, assign) BOOL userLoggedIn;

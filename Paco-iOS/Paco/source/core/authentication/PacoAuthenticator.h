@@ -21,7 +21,7 @@
 
 @interface PacoAuthenticator : NSObject
 
-@property(nonatomic, readonly, retain) GTMOAuth2Authentication *auth;
+@property(nonatomic, retain) GTMOAuth2Authentication *auth;
 @property(nonatomic, readonly, copy) NSString *cookie;
 
 - (id)initWithFirstLaunchFlag:(BOOL)firstLaunch;

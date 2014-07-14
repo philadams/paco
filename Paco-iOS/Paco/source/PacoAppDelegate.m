@@ -30,6 +30,7 @@
 #import "DDASLLogger.h"
 #import "DDFileLogger.h"
 #import "DDTTYLogger.h"
+#import <GooglePlus/GooglePlus.h>
 
 @implementation PacoAppDelegate
 
@@ -211,6 +212,11 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application {
   DDLogInfo(@"==========  Application applicationWillEnterForeground, start executing routine major task if needed  ==========");
   [[PacoClient sharedInstance] executeRoutineMajorTaskIfNeeded];
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  return [GPPURLHandler handleURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
 @end
